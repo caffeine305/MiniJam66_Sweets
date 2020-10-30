@@ -148,7 +148,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
@@ -188,7 +188,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 7.4, y: 4.52, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -205,7 +205,7 @@ GameObject:
   - component: {fileID: 923328834}
   - component: {fileID: 923328833}
   m_Layer: 0
-  m_Name: GameCtrl
+  m_Name: boardLoader
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -223,6 +223,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b0c367cefeaa3b4699af4ab7c1b063a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ancho: 16
+  alto: 10
+  escaque: {fileID: 6024139221134501030, guid: 2166383541433dc429b86b7fe5092389, type: 3}
+  centro: {fileID: 6888957242341545381, guid: 7dccb9060fc052f48a38539b489d8048, type: 3}
 --- !u!4 &923328834
 Transform:
   m_ObjectHideFlags: 0
@@ -231,7 +235,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 923328832}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.2597032, y: 0.4741579, z: -0.04478349}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
