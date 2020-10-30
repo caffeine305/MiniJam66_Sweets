@@ -22,12 +22,15 @@ public class Tablero : MonoBehaviour
         {
             for (int j = 0; j < alto; j++)
             {
-                Vector2 pos = new Vector2(i,j);
-                Instantiate(escaque, pos,Quaternion.identity);
+                Vector3 pos = new Vector3(i,j,1);
+                GameObject ubicaEspacio = Instantiate(escaque, pos,Quaternion.identity) as GameObject;
+                ubicaEspacio.transform.parent = this.transform;
+                ubicaEspacio.name = "( " + i +", "+ j +" )";
+
             }
         }
 
-        Vector2 center = new Vector2(7.4f,4.52f);
+        Vector2 center = new Vector2(11f,6.55f);
         Instantiate(centro,center,Quaternion.identity);
     }
 
