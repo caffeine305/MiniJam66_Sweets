@@ -1,0 +1,11 @@
+por arriba:
+(9,9) al (13,13)
+
+por la derecha:
+(14,5) al (22,8)
+
+por la izquierda:
+(0,8) al (8,5)
+
+Por abajo:
+(9,4) al (13,0)

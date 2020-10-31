@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class TopSpawn : MonoBehaviour
 {
-    public Tablero tablero;
     public GameObject[] chicles;
+    public float spawnLapse;
+    private float prevTime;
 
     void Start()
     {
-        float lapso = tablero.lapseTime;
-        Prepare();
+        //Prepare();
     }
 
     void Prepare()
@@ -24,8 +24,13 @@ public class TopSpawn : MonoBehaviour
         chicle.name = this.gameObject.name;
     }
     
-    void Update()
+    void FixedUpdate()
     {
-        chicle.transform 
+        if (Time.time - prevTime > spawnLapse)
+        {
+            Prepare();
+            prevTime = Time.time;
+        }
     }
+
 }

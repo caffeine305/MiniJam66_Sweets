@@ -6,7 +6,6 @@ public class Tablero : MonoBehaviour
 {
     public int ancho;
     public int alto;
-    public float lapseTime;
 
     public GameObject escaque;
     public GameObject centro;
@@ -16,7 +15,6 @@ public class Tablero : MonoBehaviour
     void Start() 
     {
         int[,] fondo = new int[ancho,alto];
-        lapseTime = 1f;
         SetUp();
     }
 

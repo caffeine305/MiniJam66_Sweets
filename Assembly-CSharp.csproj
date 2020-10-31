@@ -53,9 +53,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\BottomSpawn.cs" />
      <Compile Include="Assets\Scripts\ChicleManager.cs" />
+     <Compile Include="Assets\Scripts\InverseGravity.cs" />
+     <Compile Include="Assets\Scripts\LeftGravity.cs" />
+     <Compile Include="Assets\Scripts\LeftSpawn.cs" />
+     <Compile Include="Assets\Scripts\RightGravity.cs" />
+     <Compile Include="Assets\Scripts\RightSpawn.cs" />
      <Compile Include="Assets\Scripts\Tablero.cs" />
+     <Compile Include="Assets\Scripts\TopGravity.cs" />
      <Compile Include="Assets\Scripts\TopSpawn.cs" />
+     <None Include="Assets\validSpawnAreas.txt" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>C:/Users/Ricardo/Documents/GitHub/MiniJam66_Sweets/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
