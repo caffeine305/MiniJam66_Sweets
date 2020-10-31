@@ -55,6 +55,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\ChicleManager.cs" />
      <Compile Include="Assets\Scripts\Tablero.cs" />
+     <Compile Include="Assets\Scripts\TopSpawn.cs" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>C:/Users/Ricardo/Documents/GitHub/MiniJam66_Sweets/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>

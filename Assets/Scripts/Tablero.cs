@@ -6,13 +6,17 @@ public class Tablero : MonoBehaviour
 {
     public int ancho;
     public int alto;
+    public float lapseTime;
+
     public GameObject escaque;
     public GameObject centro;
     private int[,] fondo;
+    public GameObject[] chicles;
 
-    void Start()
+    void Start() 
     {
         int[,] fondo = new int[ancho,alto];
+        lapseTime = 1f;
         SetUp();
     }
 
@@ -23,9 +27,15 @@ public class Tablero : MonoBehaviour
             for (int j = 0; j < alto; j++)
             {
                 Vector3 pos = new Vector3(i,j,1);
+                //Vector2 chiclePos = new Vector2(1,j);
                 GameObject ubicaEspacio = Instantiate(escaque, pos,Quaternion.identity) as GameObject;
                 ubicaEspacio.transform.parent = this.transform;
                 ubicaEspacio.name = "( " + i +", "+ j +" )";
+
+                int cuantosChicles = Random.Range(0, chicles.Length );
+                GameObject chicle = Instantiate(chicles[cuantosChicles], pos, Quaternion.identity);
+                chicle.transform.parent = this.transform;
+                chicle.name = this.gameObject.name;
 
             }
         }
