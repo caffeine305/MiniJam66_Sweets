@@ -10,7 +10,7 @@ public class RightSpawn : MonoBehaviour
 
     void Prepare()
     {
-        int k = Random.Range(5, 8);
+        int k = Random.Range(5, 9);
         Vector2 offscreen = new Vector2(24,k);
 
         int cuantosChicles = Random.Range(0, chicles.Length );

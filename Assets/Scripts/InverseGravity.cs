@@ -12,11 +12,27 @@ public class InverseGravity : MonoBehaviour
         lapso = 1;
     }
 
+    bool IsAtBottom()
+    {  
+        int roundX = Mathf.RoundToInt(transform.position.x);
+        int roundY = Mathf.RoundToInt(transform.position.y);
+
+        if ( roundY > 4 )
+        {
+            return true;
+        }
+        return false;
+    }
+
     void Update()
     {
         if (Time.time - prevTime > lapso)
         {
             transform.position += new Vector3(0, 1, 0);
+            if(IsAtBottom())
+            {
+                transform.position -= new Vector3(0, 1, 0);
+            }
             prevTime = Time.time;
         }
         
