@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8835989213656037632}
   m_Layer: 0
   m_Name: chicle_rojo
-  m_TagString: Untagged
+  m_TagString: Rojo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

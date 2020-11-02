@@ -6,10 +6,16 @@ public class RightGravity : MonoBehaviour
 {
     public float lapso;
     private float prevTime;
+    public int ancho;
+    public int alto;
+    private Transform[,] tablero;
 
     void Start()
     {
+        ancho = 23;
+        alto = 14;
         lapso = 1;
+        tablero = new Transform[ancho,alto];
     }
 
     bool IsAtBottom()
@@ -24,7 +30,6 @@ public class RightGravity : MonoBehaviour
         return false;
     }
 
-
     void Update()
     {
         if (Time.time - prevTime > lapso)
@@ -36,6 +41,5 @@ public class RightGravity : MonoBehaviour
             }
             prevTime = Time.time;
         }
-        
     }
 }
